@@ -2,8 +2,10 @@
 Creating a Pipeline to Deploy Application code from Github to a web server running as a container
 
 ### Pre-requisites
-1. Install Docker inside an Ec2 server (Webserver)
-2. Add users of Ansible Master and Remote Servers to the docker Group
+1. Jenkins Server with all dependencies installed (including Maven)
+2. Ansible Master
+3. Install Docker inside an Ec2 server (Webserver)
+4. Add users of Ansible Master and Remote Servers to the docker Group
 
 ##  Steps
 1. Create a Git Repo
