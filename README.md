@@ -16,4 +16,4 @@ Creating a Pipeline to Deploy Application code from Github to a web server runni
 8. Executing ansible playbook to create a container inside the web server.
 
 ## Project Diagram 
-![alt text](https://github.com/cloudtraineer/Microservices_Project/blob/master/image.jpg?raw=true)
+![alt text](https://github.com/cloudtraineer/Microservices_Project/blob/master/MicroService_Project.jpg?raw=true)
