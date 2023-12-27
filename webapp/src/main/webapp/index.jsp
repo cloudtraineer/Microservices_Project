@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>DevOps Session on Docker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Pipeline for Docker Deployment</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
         }
 
         h1 {
-            color: #333;
             font-size: 36px;
+            margin-bottom: 10px;
         }
 
         h2 {
-            color: #4285f4;
             font-size: 28px;
+            color: #4285f4;
+            margin-bottom: 20px;
         }
 
         h3 {
-            color: #0f9d58;
             font-size: 24px;
+            color: #0f9d58;
+            margin-bottom: 15px;
         }
 
         h4 {
-            color: #1a73e8;
             font-size: 20px;
+            color: #1a73e8;
+            margin-bottom: 10px;
         }
 
         p {
-            color: #555;
             font-size: 18px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <h1>Hello, Welcome to the DevOps Session on Docker!!!!!!!!!!!!!!!!!!!!!</h1>
-    <h2>Deploying the web application on a Docker container</h2>
-    <h3>Deployment is successful!!!!!!!!!</h3>
-    <h4>Success</h4>
-    <p>Deployment by Rishabh !!!</p>
+    <header>
+        <h1>Jenkins Pipeline for Docker Deployment</h1>
+        <h2>Automating Application Deployment with Jenkins and Docker</h2>
+    </header>
 
-    <p>In this session, we explored the process of containerizing a web application using Docker. Docker provides an efficient way to package, distribute, and run applications within isolated containers.</p>
+    <div class="container">
+        <h3>Deployment Process using Jenkins Pipeline</h3>
+        <h4>Success</h4>
+        <p>Deployment by Rishabh !!!</p>
 
-    <p>We covered various Docker commands, such as building Docker images, creating containers, managing container networks, and deploying applications. Understanding these concepts is crucial for modern DevOps practices.</p>
+        <p>In this session, we explored Jenkins pipelines for automating the deployment of applications using Docker. Jenkins provides a robust platform for creating continuous integration and continuous deployment (CI/CD) pipelines.</p>
 
-    <p>By leveraging Docker's capabilities, teams can achieve consistency in development, testing, and deployment environments, leading to improved efficiency and scalability in software development workflows.</p>
+        <p>With Jenkins pipelines, we can define stages and steps to build, test, and deploy applications. Integrating Docker within these pipelines enables consistent and reliable deployment of containerized applications.</p>
 
-    <p>Thank you for joining this session! Feel free to explore more about Docker and its vast ecosystem for containerization and deployment.</p>
+        <p>We covered setting up Jenkins jobs, defining pipeline scripts, integrating Docker commands within the pipeline stages, and orchestrating the deployment workflow efficiently.</p>
+
+        <p>By leveraging Jenkins and Docker together, development teams can streamline the deployment process, ensuring faster and more reliable delivery of software applications.</p>
+
+        <p>Thank you for joining this session! Feel free to explore more about Jenkins pipelines and Docker for implementing robust CI/CD practices.</p>
+    </div>
+
+    <footer>
+        &copy; 2023 Jenkins Pipeline for Docker Deployment
+    </footer>
 </body>
 
 </html>
