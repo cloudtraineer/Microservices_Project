@@ -1,5 +1,19 @@
 - hosts: all
   become: true
   tasks:
-  - name: create docker container
-    shell: docker run -d -p --name webapp_conatiner 8090:8080 cloudtraineer/project_image
+    - name: Check if the container exists
+      shell: docker ps -q -f name=webapp_conatiner
+      register: container_check
+      ignore_errors: true
+
+    - name: Stop and remove the existing container if it exists
+      command: docker rm -f my_container
+      when: container_check.stdout_lines|length > 0
+
+    - name: Create docker container
+      docker_container:
+        name: webapp_conatiner
+        image: cloudtraineer/project_image
+        ports:
+          - "8090:8080"
+        detached: yes
