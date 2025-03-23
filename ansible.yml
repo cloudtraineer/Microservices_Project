@@ -34,4 +34,5 @@
         image: cloudtraineer/project_image
         ports:
           - "8090:8080"
+        docker_api_version: '1.44'
       when: "'cloudtraineer/project_image' not in image_check.stdout_lines"
