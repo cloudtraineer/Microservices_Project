@@ -1,5 +1,6 @@
 - hosts: all
   become: true
+  user: myansi
   tasks:
   - name: Create Docker container
     shell: docker run -d --name ansible_container -p 8090:8080 cloudtraineer/microserviceproject_image
