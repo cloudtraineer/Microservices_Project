@@ -1,5 +1,6 @@
 - hosts: all
   become: true
+  user: myansi
   tasks:
     - name: Check if the container exists
       shell: docker ps -q -f name=my_container
@@ -27,6 +28,7 @@
 
 - hosts: all
   become: true
+  user: myansi
   tasks:
     - name: Create docker container
       docker_container:
